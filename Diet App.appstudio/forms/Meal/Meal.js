@@ -1,8 +1,6 @@
 // Array to store Meals
 const listMeal = [];
 
-Label3.innerHTML = 2000;
-
 Button1.onclick=function(){
   //CalorieResult.innerHTML = InputMeal.value;
   
@@ -13,7 +11,7 @@ Button1.onclick=function(){
   
 
   //Adding Meal to array
-  listMeal.push(myMeal);
+  listMeal.push(myMeal + "kcal");
 
   console.log(listMeal);
   
@@ -28,6 +26,17 @@ Button1.onclick=function(){
     }
     
   Label2.innerHTML = sum;
+  
+  // Store the value of calorie allowance locally
+  CalorieAllowance = Label3.value;
+  
+  // Calculate the percentage of calorie intake
+  let percent = sum / CalorieAllowance * 100; 
+  
+  Progressbar1.value = parseInt(percent);
+  
+  // Create method for turning progress bar red if 
+  // it goes over 100%
   
   
 }

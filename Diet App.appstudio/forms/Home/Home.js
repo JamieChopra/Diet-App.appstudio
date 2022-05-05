@@ -26,8 +26,10 @@ Button2.onclick=function(){
 
   var age = parseInt(Age.value);
 
-  let BMR = 88.362 + (13.397 + weight) + (4.799 * height) - (5.677 * age);
-  let Calories = BMR * 1.2;
-  Label5.innerHTML = Calories;
+  let BMR = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+  // Used parseInt to round the BMR number to avoid decimals
+  let Calories = parseInt(BMR) * 1.2;
+  CalorieAllowance.innerHTML = "Calorie Allowance: " + Calories + " kcal";
 
+  Label3.innerHTML = Calories;
 }

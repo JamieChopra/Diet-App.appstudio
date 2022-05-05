@@ -17,7 +17,7 @@
   "fontWeight": "",
   "height": "auto",
   "hidden": "",
-  "id": "Label5",
+  "id": "CalorieAllowance",
   "labelStyle": "text",
   "left": 12,
   "mAll": "",
@@ -43,6 +43,6 @@
   "script": "",
   "style": "",
   "top": 459,
-  "value": "Label",
+  "value": "Calorie Allowance:",
   "width": "auto"
 }

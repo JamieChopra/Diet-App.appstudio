@@ -1,7 +1,7 @@
 {
   "!type": "Progressbar_bs4",
   "animated": "",
-  "appearance": "",
+  "appearance": " bg-success",
   "backgroundColor": "",
   "borderColor": "",
   "borderStyle": "",
@@ -49,6 +49,6 @@
   "striped": "",
   "style": "",
   "top": "auto",
-  "value": "42",
+  "value": "0",
   "width": "auto"
 }
