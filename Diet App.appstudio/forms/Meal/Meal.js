@@ -37,8 +37,7 @@ Button1.onclick=function(){
   
   // Create method for turning progress bar red if 
   // it goes over 100%
-  
-  
+
 }
 
 

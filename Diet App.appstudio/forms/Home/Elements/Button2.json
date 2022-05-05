@@ -1,7 +1,7 @@
 {
   "!type": "Button_bs4",
   "ChangeForm": "",
-  "appearance": " btn-secondary",
+  "appearance": " btn-success",
   "backgroundColor": "",
   "badge": "",
   "badgeAppearance": " badge-info",
@@ -61,6 +61,6 @@
   "style": "",
   "toggleControl": "",
   "top": 388,
-  "value": "Button",
+  "value": "Calculate",
   "width": "auto"
 }
