@@ -19,6 +19,7 @@ Button1.onclick=function(){
   //Add the last item of the array to the list
   Listgroup1.addItem(listMeal[(listMeal.length - 1)]);
   
+  // ADDING CHECKBOX
   Checkbox1.addItem("Delete");
   
   console.log(Listgroup1);
@@ -43,13 +44,11 @@ Button1.onclick=function(){
   // Create method for turning progress bar red if 
   // it goes over 100%
 
-  
-
 }
 
-
+// TRYING TO MAKE DELETE BUTTON
 Button3.onclick=function(){
-  let checked = Checkbox1.length - 1;
+  let checked = Checkbox1.getValue(i);
   console.log(checked);
   delete Listgroup1[checked];
   console.log(checked);
