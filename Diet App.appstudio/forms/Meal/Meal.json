@@ -81,6 +81,24 @@
         "Elements",
         "Label4.json"
       ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "Meal",
+        "Elements",
+        "Checkbox1.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "Meal",
+        "Elements",
+        "Button3.json"
+      ]
     }
   ],
   "class": "",
