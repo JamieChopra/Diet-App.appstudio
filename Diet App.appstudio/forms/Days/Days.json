@@ -16,7 +16,7 @@
         "forms",
         "Days",
         "Elements",
-        "Listgroup2.json"
+        "CaloriesList.json"
       ]
     },
     {
@@ -25,7 +25,7 @@
         "forms",
         "Days",
         "Elements",
-        "Label5.json"
+        "DateTitle.json"
       ]
     },
     {
@@ -34,7 +34,7 @@
         "forms",
         "Days",
         "Elements",
-        "Label5Copy.json"
+        "CaloriesTitle.json"
       ]
     },
     {
@@ -43,7 +43,7 @@
         "forms",
         "Days",
         "Elements",
-        "Label5CopyCopy.json"
+        "HitGoalTitle.json"
       ]
     },
     {
@@ -52,7 +52,7 @@
         "forms",
         "Days",
         "Elements",
-        "Listgroup3.json"
+        "DateList.json"
       ]
     },
     {
@@ -61,7 +61,7 @@
         "forms",
         "Days",
         "Elements",
-        "Listgroup4.json"
+        "HitGoalList.json"
       ]
     },
     {

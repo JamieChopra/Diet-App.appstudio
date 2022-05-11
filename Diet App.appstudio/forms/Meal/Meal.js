@@ -1,26 +1,16 @@
 // Array to store Meals
 listMeal = [];
 
-Button1.onclick=function(){
-  //CalorieResult.innerHTML = InputMeal.value;
-  
+SaveMeal.onclick=function(){
 
   //Stores input meal to the variable myMeal
   var myMeal = InputMeal.value;
 
-  
-
   //Adding Meal to array
   listMeal.push(myMeal + "kcal");
 
-  console.log(listMeal);
-  
-
   //Add the last item of the array to the list
-  Listgroup1.addItem(listMeal[(listMeal.length - 1)]);
-  
-  
-  console.log(Listgroup1);
+  MealList.addItem(listMeal[(listMeal.length - 1)]);
   
   sum = 0;
   
@@ -29,33 +19,28 @@ Button1.onclick=function(){
         sum += parseInt(listMeal[x]);
     }
     
-  Label2.innerHTML = sum;
+  MealsTotal.innerHTML = sum;
   
   // Store the value of calorie allowance locally
-  CalorieAllowance = Label3.value;
+  CalorieAllowance = DailyCalories.value;
   
   // Calculate the percentage of calorie intake
   let percent = sum / CalorieAllowance * 100; 
   
   Progressbar1.value = parseInt(percent);
-  
-  // Create method for turning progress bar red if 
-  // it goes over 100%
 
 }
 
-
-
 //Save Day button
-Button3.onclick=function(){
+CompleteDay.onclick=function(){
   
   //Saving Date Removing Month,Day,Year text
   var date = new Date().toISOString().slice(0, 19).replace('T',' ');
   
-  Listgroup3.addItem(date);
+  DateList.addItem(date);
   
   //Saves the calories in meal to a day
-  Listgroup2.addItem(sum + "kcal");
+  CaloriesList.addItem(sum + "kcal");
   
   //States whether goal was met or not
   if(sum < CalorieAllowance)
@@ -65,13 +50,13 @@ Button3.onclick=function(){
   else{
     goal = "No";
   }
-  Listgroup4.addItem(goal);
+  HitGoalList.addItem(goal);
   
   //Clear all meal data once day is saved
-  Listgroup1.clear();
+  MealList.clear();
   Progressbar1.value = parseInt(0);
   sum = 0;
   listMeal = [];
-  Label2.innerHTML = 0;
-  console.log(Listgroup1);
+  MealsTotal.innerHTML = 0;
+  console.log(MealList);
 }

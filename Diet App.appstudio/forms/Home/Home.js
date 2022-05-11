@@ -18,7 +18,7 @@ Home.onshow=function(){
   NSBPage.appendChild(HeaderGlobal)
   }
 
-Button2.onclick=function(){
+Calculate.onclick=function(){
 
   var weight = parseInt(Weight.value);
 
@@ -26,10 +26,10 @@ Button2.onclick=function(){
 
   var age = parseInt(Age.value);
 
-  let BMR = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+  let BMR = 66.47 + (13.75 * weight) + (5.003 * height) - (6.755 * age);
   // Used parseInt to round the BMR number to avoid decimals
   let Calories = parseInt(BMR) * 1.2;
   CalorieAllowance.innerHTML = "Calorie Allowance: " + Calories + " kcal";
 
-  Label3.innerHTML = Calories;
+  DailyCalories.innerHTML = Calories;
 }
