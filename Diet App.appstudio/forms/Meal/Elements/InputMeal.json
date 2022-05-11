@@ -1,6 +1,6 @@
 {
   "!type": "Input_bs4",
-  "align": "",
+  "align": "text-align:center; ",
   "attributes": "",
   "autocapitalize": "",
   "autocomplete": "",

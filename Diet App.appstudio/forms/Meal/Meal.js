@@ -1,5 +1,5 @@
 // Array to store Meals
-const listMeal = [];
+listMeal = [];
 
 Button1.onclick=function(){
   //CalorieResult.innerHTML = InputMeal.value;
@@ -19,12 +19,10 @@ Button1.onclick=function(){
   //Add the last item of the array to the list
   Listgroup1.addItem(listMeal[(listMeal.length - 1)]);
   
-  // ADDING CHECKBOX
-  Checkbox1.addItem("Delete");
   
   console.log(Listgroup1);
   
-  let sum = 0;
+  sum = 0;
   
   // Add all of the meal inputs together
   for (let x = 0; x < listMeal.length; x++){
@@ -46,12 +44,34 @@ Button1.onclick=function(){
 
 }
 
-// TRYING TO MAKE DELETE BUTTON
+
+
+//Save Day button
 Button3.onclick=function(){
-  let checked = Checkbox1.getValue(i);
-  console.log(checked);
-  delete Listgroup1[checked];
-  console.log(checked);
+  
+  //Saving Date Removing Month,Day,Year text
+  var date = new Date().toISOString().slice(0, 19).replace('T',' ');
+  
+  Listgroup3.addItem(date);
+  
+  //Saves the calories in meal to a day
+  Listgroup2.addItem(sum + "kcal");
+  
+  //States whether goal was met or not
+  if(sum < CalorieAllowance)
+  {
+    goal = "Yes";
+  }
+  else{
+    goal = "No";
+  }
+  Listgroup4.addItem(goal);
+  
+  //Clear all meal data once day is saved
+  Listgroup1.clear();
+  Progressbar1.value = parseInt(0);
+  sum = 0;
+  listMeal = [];
+  Label2.innerHTML = 0;
+  console.log(Listgroup1);
 }
-
-

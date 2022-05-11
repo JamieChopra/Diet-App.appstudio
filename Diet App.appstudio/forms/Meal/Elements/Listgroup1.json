@@ -21,7 +21,7 @@
   "id": "Listgroup1",
   "itemBadges": "1\n2\n3\n4",
   "items": "",
-  "left": "25",
+  "left": "40%",
   "listStyle": "ul",
   "mAll": "",
   "mBottom": "",
@@ -47,9 +47,9 @@
   "popPosition": "",
   "popStyle": "tooltip",
   "popTitle": "Title",
-  "right": "25",
+  "right": "40%",
   "script": "",
   "style": "",
   "top": "300",
-  "width": "180px"
+  "width": "auto"
 }
